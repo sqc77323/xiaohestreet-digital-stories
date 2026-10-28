@@ -1,0 +1,5 @@
+import fs from 'node:fs/promises';import path from 'node:path';import {fileURLToPath} from 'node:url'
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');const stories=JSON.parse(await fs.readFile(path.join(root,'src/data/stories.json'),'utf8'))
+const ids=new Set();let errors=[]
+for(const s of stories){if(!s.id||ids.has(s.id))errors.push(`重复或缺失 id：${s.id}`);ids.add(s.id);for(const k of ['title','cover','body','gallery','video'])if(s[k]===undefined)errors.push(`${s.id} 缺少 ${k}`);if(!Array.isArray(s.body)||!s.body.length)errors.push(`${s.id} 正文为空`);for(const p of [s.cover,s.video.poster,...s.gallery.map(x=>x.src)])if(!/^https?:/.test(p)){try{await fs.access(path.join(root,'public',p))}catch{errors.push(`${s.id} 资源不存在：${p}`)}}if(s.video.source==='local'){try{await fs.access(path.join(root,'public',s.video.src))}catch{errors.push(`${s.id} 视频不存在：${s.video.src}`)}}}
+if(errors.length){console.error(errors.join('\n'));process.exit(1)}console.log(`内容检查通过：${stories.length} 个故事、${stories.filter(s=>s.visible).length} 个显示。`)

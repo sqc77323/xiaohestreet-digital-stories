@@ -1,0 +1,26 @@
+[
+  {
+    "id":"canal","order":1,"visible":true,"number":"01","title":"运河码头","subtitle":"一条河，如何养活一条街？",
+    "excerpt":"三河交汇处，水路把货物、人和生意带到这里。","cover":"media/images/street-market.jpg",
+    "body":["小河直街的故事，要先从水路讲起。这里处在京杭大运河、小河与余杭塘河交汇之处，水路曾把货物、旅人和生意带到城北。","官方资料记载，自宋代以来这里就是运河沿线的重要区域，至清代已发展为商业街和水陆码头。现存作坊、店铺、河埠、船埠等遗迹，使“因水而兴”成为仍可辨认的空间记忆。"],
+    "history":"资料依据：杭州市拱墅区政府公开介绍、浙江省委党校历史文化保护现场教学资料。未使用未经证实的传说。",
+    "gallery":[{"src":"media/images/street-market.jpg","alt":"小河直街现场街景","caption":"项目预调研现场照片"},{"src":"media/images/old-lane.jpg","alt":"小河直街沿街建筑","caption":"沿街生活与游览空间"}],
+    "video":{"title":"运河码头故事视频","source":"","src":"","poster":"media/placeholders/video-canal.svg","caption":"视频素材待补充"}
+  },
+  {
+    "id":"home","order":2,"visible":true,"number":"02","title":"老街人家","subtitle":"青石板里，藏着怎样的烟火气？",
+    "excerpt":"这里不只供人观看，也一直有人生活。","cover":"media/images/old-lane.jpg",
+    "body":["小河直街的价值不只在白墙黛瓦，更在“有人生活”。临水民居、窄巷、店铺、作坊和河埠交织在一起。","部分建筑呈现“下店上宅”的商住形态。保护更新延续了居住功能，街区至今仍有原住民。游客看到的门窗、花草与桌凳，是生活持续发生的痕迹。"],
+    "history":"街区集中反映清末民国初期城市平民居住、生产劳动和运河航运文化。图片来自项目预调研附件。",
+    "gallery":[{"src":"media/images/old-lane.jpg","alt":"老街窄巷","caption":"临水街巷与日常生活"},{"src":"media/images/street-market.jpg","alt":"街区游览场景","caption":"当代街区生活"}],
+    "video":{"title":"老街人家故事视频","source":"","src":"","poster":"media/placeholders/video-home.svg","caption":"视频素材待补充"}
+  },
+  {
+    "id":"renewal","order":3,"visible":true,"number":"03","title":"小河新生","subtitle":"老街为什么越来越年轻？",
+    "excerpt":"保护不是把时间冻住，而是让生活继续。","cover":"media/images/xiaohe-sign.jpg",
+    "body":["小河直街的更新不是简单翻新。资料显示，街区于2006年形成保护规划，2007年启动重点保护区建设，2008年完成二期工程。","今天，传统民居、原住民生活与咖啡馆、手作空间、设计工作室并存。老街的年轻感，来自旧空间与新日常共同生长。"],
+    "history":"保护工程兼顾历史文化遗产保护与居民居住条件改善。年份来自公开资料。",
+    "gallery":[{"src":"media/images/xiaohe-sign.jpg","alt":"小河直街标识","caption":"项目预调研现场照片"},{"src":"media/images/cafe.jpg","alt":"老街中的当代店铺","caption":"传统街巷中的新业态"}],
+    "video":{"title":"小河新生故事视频","source":"","src":"","poster":"media/placeholders/video-renewal.svg","caption":"视频素材待补充"}
+  }
+]

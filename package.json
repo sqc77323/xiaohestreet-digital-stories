@@ -1,0 +1,29 @@
+{
+  "name": "xiaohestreet-digital-stories",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@11.25.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b --pretty false",
+    "preview": "vite preview",
+    "video:manage": "node tools/video-manager.mjs",
+    "qr:generate": "node tools/generate-qr.mjs",
+    "test": "node tools/validate-content.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "typescript": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "qrcode": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/qrcode": "latest"
+  }
+}
