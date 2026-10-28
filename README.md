@@ -87,7 +87,9 @@ ffmpeg -i input.mp4 -c:v libx264 -crf 25 -preset medium \
 
 ## 五 部署到 GitHub Pages
 
-当前目录没有关联 GitHub 仓库，因此尚未冒充部署成功。首次部署只需：
+本项目已部署到：<https://sqc77323.github.io/xiaohestreet-digital-stories/>，源码仓库为：<https://github.com/sqc77323/xiaohestreet-digital-stories>。
+
+如需在新的仓库重新部署：
 
 1. 在 GitHub 新建一个空仓库。
 2. 在本目录执行：
