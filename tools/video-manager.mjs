@@ -31,7 +31,7 @@ if(mode==='local'){
   const safe=`${id}-${Date.now()}.mp4`, dest=path.join(root,'public/videos',safe)
   await fs.copyFile(abs,dest); source=`videos/${safe}`
 }else if(!/^https:\/\//.test(source)){throw new Error('外部视频必须使用 HTTPS 直链')}
-story.video={...story.video,title:title||story.video.title,source:mode,src:source,poster:poster||story.video.poster,caption:''}
+story.video={...story.video,title:title||story.video.title,source:mode,src:source,poster:poster||story.video.poster}
 await fs.writeFile(dataFile,JSON.stringify(stories,null,2)+'\n')
 console.log(`已关联：${story.title} → ${source}`)
 console.log('请运行 pnpm dev 预览，确认后提交 src/data/stories.json 与 public/videos/。')

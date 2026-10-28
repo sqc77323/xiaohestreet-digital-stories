@@ -29,8 +29,7 @@
       "title": "运河码头的故事",
       "source": "local",
       "src": "videos/canal-1793201942360.mp4",
-      "poster": "media/images/street-market.jpg",
-      "caption": ""
+      "poster": "media/images/street-market.jpg"
     }
   },
   {
@@ -63,8 +62,7 @@
       "title": "老街人家",
       "source": "local",
       "src": "videos/home-1793201942716.mp4",
-      "poster": "media/images/old-lane.jpg",
-      "caption": ""
+      "poster": "media/images/old-lane.jpg"
     }
   },
   {
@@ -97,8 +95,7 @@
       "title": "小河新生",
       "source": "local",
       "src": "videos/renewal-1793201943098.mp4",
-      "poster": "media/images/xiaohe-sign.jpg",
-      "caption": ""
+      "poster": "media/images/xiaohe-sign.jpg"
     }
   }
 ]
