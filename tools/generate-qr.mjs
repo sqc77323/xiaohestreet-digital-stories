@@ -11,7 +11,7 @@ if(!/^https:\/\//.test(siteUrl)){
   process.exit(2)
 }
 const out=path.join(root,'qrcodes');await fs.mkdir(out,{recursive:true})
-const entries=[...(cfg.qrIncludeHome?[['home',`${siteUrl}/#/`]]:[]),...stories.map(s=>[s.id,`${siteUrl}/#/stories/${encodeURIComponent(s.id)}`])]
+const entries=[...(cfg.qrIncludeHome?[['index',`${siteUrl}/#/`]]:[]),...stories.map(s=>[s.id,`${siteUrl}/#/stories/${encodeURIComponent(s.id)}`])]
 for(const [name,url] of entries){
   await QRCode.toFile(path.join(out,`${name}.png`),url,{errorCorrectionLevel:'H',width:1600,margin:4,color:{dark:'#173631',light:'#FFFFFF'}})
   await fs.writeFile(path.join(out,`${name}.svg`),await QRCode.toString(url,{type:'svg',errorCorrectionLevel:'H',margin:4,color:{dark:'#173631',light:'#FFFFFF'}}))
