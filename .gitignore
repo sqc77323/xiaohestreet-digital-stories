@@ -1,6 +1,6 @@
 node_modules/
 dist/
 .DS_Store
-qrcodes/*.png
-qrcodes/*.svg
-qrcodes/urls.json
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
